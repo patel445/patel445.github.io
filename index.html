@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Jay Patel - Developer & Entrepreneur</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Jay Patel - Developer & Entrepreneur - Chicago" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://patel445.github.io/" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        html,
+        body {
+            background-color: #0d0d0d !important;
+            color: #fff !important;
+            font-size: 16px !important;
+        }
+
+        #terminal {
+            font-family: 'Inconsolata', monospace !important;
+            margin: 25px 10px 25px 12px !important;
+            max-width: 900px;
+        }
+
+        a {
+            color: #fff !important;
+            text-decoration: underline !important;
+        }
+
+        .headingStyle {
+            color: #0083ff !important;
+        }
+
+        .prefixStyle {
+            color: #00FF41 !important;
+        }
+    </style>
+    <script>
+        var counter = 0;
+        function renderTerminal() {
+            $.get('about.txt', function(data) {
+                console = data;
+                console = console.slice(0, console.length - 1);
+            });
+        }
+        function addHTML() {
+            var termContent = $("#terminal").html();
+            counter += 5;
+            var text = console.substring(0, counter);
+            $("#terminal").html(text.replace(new RegExp("\n", "g"), "<br/>"));
+            if(counter < 2250){
+                window.scrollBy(0, 50);
+            }
+        }
+        setInterval("addHTML()", 10);
+        window.onload = function() {
+            renderTerminal();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="terminal"></div>
+</body></html>
