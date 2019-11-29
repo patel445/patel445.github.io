@@ -36,5 +36,5 @@ Front-End Team Leader Sept 2016 - May 2017
 JavaScript, Node.js, AngularJS, HTML/CSS, Java, C, C++, Python, SQL, AWS, SEO 
 
 <span class = "headingStyle">Social:</span>
-<a href="mailto:jayptl96@gmail.com">Mail</a> <a href="https://github.com/patel445">Github</a> <a href="https://www.linkedin.com/in/jayptl96">Linkedin</a> <a href="https://www.instagram.com/jayp445/">Instagram</a>
+<span><a target='_blank' href='mailto:jayptl96@gmail.com'>Mail</a></span> <span><a onclick'e.preventDefault()' target='_blank' href='https://github.com/patel445'>Github</a></span> <span><a onclick'e.preventDefault()' target= '_blank' href='https://www.linkedin.com/in/jayptl96'>Linkedin</a></span> <span><a onclick'e.preventDefault()' target= '_blank' href='https://www.instagram.com/jayp445/'>Instagram</a></span>
 

@@ -19,11 +19,11 @@
 
         #terminal {
             font-family: 'Inconsolata', monospace !important;
-            padding-left: 22px!important;
-            padding-right:19px!important;
-            margin-left:0!important;
-            margin-bottom:50px!important;
-            margin-top:20px!important;
+            padding-left: 22px !important;
+            padding-right: 19px !important;
+            margin-left: 0 !important;
+            margin-bottom: 50px !important;
+            margin-top: 20px !important;
             max-width: 900px;
         }
 
@@ -40,24 +40,38 @@
             color: #00FF41 !important;
         }
     </style>
-    <script>
+    <script type="text/javascript">
         var counter = 0;
+
+        function setIntervalTimer(callback, interval, x) {
+            for (var i = 0; i < x; i++) {
+                setTimeout(callback, i * interval);
+            }
+        }
+
+        function openNewLink() {
+            window.open("https://www.w3schools.com");
+        }
+
         function renderTerminal() {
             $.get('about.txt', function(data) {
                 console = data;
                 console = console.slice(0, console.length - 1);
             });
         }
+
         function addHTML() {
             var termContent = $("#terminal").html();
             counter += 5;
             var text = console.substring(0, counter);
             $("#terminal").html(text.replace(new RegExp("\n", "g"), "<br/>"));
-            if(counter < 2250){
+            if (counter < 2250) {
                 window.scrollBy(0, 50);
             }
         }
-        setInterval("addHTML()", 10);
+        setIntervalTimer(function() {
+            addHTML();
+        }, 10, 490)
         window.onload = function() {
             renderTerminal();
         }
