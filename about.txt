@@ -1,7 +1,7 @@
 <span class="prefixStyle">jaypatel@patel445:~$ </span> cd Desktop
 <span class="prefixStyle">jaypatel@patel445:~$ </span> ls 
 
-about.txt
+about.txt  <a onclick'e.preventDefault()' target= '_blank' href='resume.pdf'>resume.pdf</a>
 
 <span class="prefixStyle">jaypatel@patel445:~$ </span> cat about.txt<br/>
 Hello World! My name is Jay Patel. 
@@ -35,6 +35,6 @@ Front-End Team Leader Sept 2016 - May 2017
 <span class = "headingStyle">Skills:</span>
 JavaScript, Node.js, AngularJS, HTML/CSS, Java, C, C++, Python, SQL, AWS, SEO 
 
-<span class = "headingStyle">Social:</span>
+<span class = "headingStyle">Connect:</span>
 <span><a target='_blank' href='mailto:jayptl96@gmail.com'>Mail</a></span> <span><a onclick'e.preventDefault()' target='_blank' href='https://github.com/patel445'>Github</a></span> <span><a onclick'e.preventDefault()' target= '_blank' href='https://www.linkedin.com/in/jayptl96'>Linkedin</a></span> <span><a onclick'e.preventDefault()' target= '_blank' href='https://www.instagram.com/jayp445/'>Instagram</a></span>
 
